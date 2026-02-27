@@ -22,9 +22,10 @@
   Cache-Control: public, max-age=86400
 
 # Security headers (all pages)
+# Note: X-Frame-Options intentionally omitted — this deployment is
+# designed to be embedded in an iframe by vtdesk (app.vtdesk.com).
 /*
   X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
