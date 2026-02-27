@@ -1,0 +1,4 @@
+# SPA fallback — serve index.html for all non-file routes.
+# CF Pages does this automatically for 404s, but this ensures
+# hash-based routing (#panel=markets) works from deep links.
+/*  /index.html  200

@@ -1,0 +1,16 @@
+# Cloudflare Pages configuration for World Monitor Finance.
+#
+# Used by `wrangler pages dev` for local development and sets
+# compatibility flags for the deployed Functions.
+#
+# Build settings are configured in the CF Dashboard:
+#   Build command:    npm run build:finance
+#   Output directory: dist
+#   Environment vars: VITE_VARIANT=finance (+ optional API keys)
+
+name = "worldmonitor-finance"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+VITE_VARIANT = "finance"
